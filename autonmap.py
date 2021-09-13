@@ -93,7 +93,7 @@ def quick():
 
     target = input("\033[1;37m[\033[1;32m?\033[1;37m]\033[1;37m Enter Domain or IP Address: \033[0m").lower()
     clear()
-    print("\033[34m[~] Scanning : \033[0m" + target)
+    print("\033[32m[~] Scanning : \033[0m" + target)
     print("Prossesing ....\n")
     time.sleep(1)
     scanner = nmap.PortScanner()
