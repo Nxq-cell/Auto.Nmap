@@ -157,7 +157,7 @@ def fun():
                 intense()
 
             except KeyboardInterrupt:
-                back()
+                interrup()
 
         elif choice == ("3"):
             try:
