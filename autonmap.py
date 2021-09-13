@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-
 import nmap, os, sys, time
 from os import system, name
 from time import gmtime, strftime
@@ -144,7 +143,6 @@ def fun():
                 regular()
 
             except KeyboardInterrupt:
-                
                 back()
 
         elif choice == ("2"):
@@ -153,7 +151,6 @@ def fun():
                 intense()
 
             except KeyboardInterrupt:
-                
                 back()
 
         elif choice == ("3"):
@@ -162,7 +159,6 @@ def fun():
                 ping()
 
             except KeyboardInterrupt:
-                
                 back()
 
 
@@ -172,7 +168,6 @@ def fun():
                 quick()
 
             except KeyboardInterrupt:
-
                 back()
 
         elif choice == ("5"):
