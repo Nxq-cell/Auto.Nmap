@@ -5,7 +5,7 @@ simple tool for mwmbers new to nmap.
 
 ```
 git clone https://github.com/Nxq-cell/Auto.Nmap.git
-cd Auto.nmap
+cd Auto.Nmap
 pip3 install python-nmap
 python3 autonmap.py
 ```
