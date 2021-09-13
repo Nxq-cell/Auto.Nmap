@@ -1,5 +1,5 @@
 # Auto.Nmap
-simple tool for mwmbers new to nmap.
+simple tool run nmap with python.
 
 # install:
 
