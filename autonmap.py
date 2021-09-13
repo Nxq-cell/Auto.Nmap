@@ -46,7 +46,8 @@ def regular():
 
     target = input("\033[1;37m[\033[1;32m?\033[1;37m]\033[1;37m Enter Domain or IP Address: \033[0m").lower()
     clear()
-    print("\033[32m[~] Scanning Nmap Port Scan: \033[0m" + target)
+    print("\033[0m[\033[1;32mtype\033[0m]\033[0m regular")
+    print("\033[32m[~] Scanning: \033[0m" + target)
     print("Prossesing ....)\n")
     time.sleep(1)
     scanner = nmap.PortScanner()
@@ -61,6 +62,7 @@ def intense():
 
     target = input("\033[1;37m[\033[1;32m?\033[1;37m]\033[1;37m Enter Domain or IP Address: \033[0m").lower()
     clear()
+    print("\033[0m[\033[1;32mtype\033[0m]\033[0m intense")
     print("\033[32m[~] Scanning : \033[0m" + target)
     print("Prossesing ....\n")
     time.sleep(1)
@@ -77,6 +79,7 @@ def ping():
 
     target = input("\033[1;37m[\033[1;32m?\033[1;37m]\033[1;37m Enter Domain or IP Address: \033[0m").lower()
     clear()
+    print("\033[0m[\033[1;32mtype\033[0m]\033[0m ping")
     print("\033[32m[~] Scanning : \033[0m" + target)
     print("Prossesing ....\n")
     time.sleep(1)
@@ -93,6 +96,7 @@ def quick():
 
     target = input("\033[1;37m[\033[1;32m?\033[1;37m]\033[1;37m Enter Domain or IP Address: \033[0m").lower()
     clear()
+    print("\033[0m[\033[1;32mtype\033[0m]\033[0m quick")
     print("\033[32m[~] Scanning : \033[0m" + target)
     print("Prossesing ....\n")
     time.sleep(1)
@@ -109,6 +113,7 @@ def quickplus():
 
     target = input("\033[1;37m[\033[1;32m?\033[1;37m]\033[1;37m Enter Domain or IP Address: \033[0m").lower()
     clear()
+    print("\033[0m[\033[1;32mtype\033[0m]\033[0m quickplus")
     print("\033[32m[~] Scanning : \033[0m" + target)
     print("Prossesing ....\n")
     time.sleep(1)
