@@ -53,7 +53,7 @@ def regular():
     command = ("nmap " + target)
     process = os.popen(command)
     results = str(process.read())
-    logPath = "logs/nmap-" + strftime("%Y-%m-%d_%H:%M:%S", gmtime())
+    logPath = " logs/nmap-" + strftime("%Y-%m-%d_%H:%M:%S", gmtime())
     print(results + command + logPath)
     print("\033[33m Nmap Version: \033[0m", scanner.nmap_version())
     
@@ -68,7 +68,7 @@ def intense():
     command = ("nmap -T4 -A -v " + target)
     process = os.popen(command)
     results = str(process.read())
-    logPath = "logs/nmap-" + strftime("%Y-%m-%d_%H:%M:%S", gmtime())
+    logPath = " logs/nmap-" + strftime("%Y-%m-%d_%H:%M:%S", gmtime())
     print(results + command + logPath)
     print("\033[32mNmap Version: \033[0m", scanner.nmap_version())
 
@@ -84,7 +84,7 @@ def ping():
     command = ("nmap -sn " + target)
     process = os.popen(command)
     results = str(process.read())
-    logPath = "logs/nmap-" + strftime("%Y-%m-%d_%H:%M:%S", gmtime())
+    logPath = " logs/nmap-" + strftime("%Y-%m-%d_%H:%M:%S", gmtime())
     print(results + command + logPath)
     print("\033[32mNmap Version: \033[0m", scanner.nmap_version())
 
@@ -100,7 +100,7 @@ def quick():
     command = ("nmap -T4 -F " + target)
     process = os.popen(command)
     results = str(process.read())
-    logPath = "logs/nmap-" + strftime("%Y-%m-%d_%H:%M:%S", gmtime())
+    logPath = " logs/nmap-" + strftime("%Y-%m-%d_%H:%M:%S", gmtime())
     print(results + command + logPath)
     print("\033[32mNmap Version: \033[0m", scanner.nmap_version())
 
@@ -116,7 +116,7 @@ def quickplus():
     command = ("sudo nmap -sV -T4 -O -F --version-light " + target)
     process = os.popen(command)
     results = str(process.read())
-    logPath = "logs/nmap-" + strftime("%Y-%m-%d_%H:%M:%S", gmtime())
+    logPath = " logs/nmap-" + strftime("%Y-%m-%d_%H:%M:%S", gmtime())
     print(results + command + logPath)
     print("\033[32mNmap Version: \033[0m", scanner.nmap_version())
 
