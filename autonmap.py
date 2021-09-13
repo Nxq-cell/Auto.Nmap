@@ -5,6 +5,7 @@ from os import system, name
 from time import gmtime, strftime
 
 example = "\n\033[1;37m[\033[1;32mexample\033[1;37m]\033[1;37m 163.532.353.1 / 163.532.353.1-30 / 163.532.353.1,22,33 / 163.532.353.1/24\033\n"
+back = "\033[1;37m[\033[1;32mback\033[1;37m]\033[1;37m ctrl+C\033"
 
 def logo():
     print(""" \033[1;32m
@@ -33,7 +34,7 @@ def clear():
     else:
         _ = system('clear')
 
-def back():
+def interrup():
     clear()
     print("\n")
     print("\033[0m[\033[1;31m!\033[0m]\033[1;0m User Interruption Detected..!")
@@ -142,11 +143,13 @@ def fun():
         choice = input("\033[0;37m[\033[1;32m+\033[0;37m]\033[1;37m Enter your choice \033[1;37m[\033[1;32mNUM\033[1;37m]:\033[1;m ")
         if choice == ("1"):
             try:
+                print(back)
                 print(example)
                 regular()
 
+
             except KeyboardInterrupt:
-                back()
+                interrup()
 
         elif choice == ("2"):
             try:
@@ -159,27 +162,30 @@ def fun():
         elif choice == ("3"):
             try:
                 print(example)
+                print(back)
                 ping()
 
             except KeyboardInterrupt:
-                back()
+                interrup()
 
 
         elif choice == ("4"):
             try:
                 print(example)
+                print(back)
                 quick()
 
             except KeyboardInterrupt:
-                back()
+                interrup()
 
         elif choice == ("5"):
             try:
                 print(example)
+                print(back)
                 quickplus()
 
             except KeyboardInterrupt:
-                back()
+                interrup()
 
 
         elif choice == ("0"):
@@ -189,7 +195,7 @@ def fun():
         else:
             clear()
             logo()
-            print("\033[1;31m[-] Invalid option..! \033[1;m")
+            print("\n\t\033[5;31m[-] Invalid option..! \033[0m")
         
                                               
 if __name__ == "__main__":
