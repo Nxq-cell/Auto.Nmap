@@ -8,10 +8,8 @@ example = "\n\033[1;37m[\033[1;32mexample\033[1;37m]\033[1;37m 163.532.353.1 / 1
 
 def logo():
     print(""" \033[1;32m
-
  ▄▀█ █░█ ▀█▀ █▀█ ░ █▄░█ █▀▄▀█ ▄▀█ █▀█
  █▀█ █▄█ ░█░ █▄█ ▄ █░▀█ █░▀░█ █▀█ █▀▀ v1.0.beta
-
            coded by Nxq\033[1;m""")
  
  
@@ -26,7 +24,7 @@ def menu():
     
     print("\033[1;32m[\033[1;37m5\033[1;32m]\033[1;37m quickplus [root]\033")
     
-    print("\033[1;32m[\033[1;37m6\033[1;32m]\033[1;37m exit\033\n")
+    print("\033[1;32m[\033[1;37m0\033[1;32m]\033[1;37m exit\033\n")
 
 
 def clear():
@@ -138,10 +136,10 @@ def fun():
     clear()
     logo()
 
-    while choice != ("6"):
+    while choice != ("0"):
     
         menu()
-        choice = input("\033[1;37m[\033[1;32m+\033[1;37m]\033[1;37mEnter your choice:\033[1;m ")
+        choice = input("\033[0;37m[\033[1;32m+\033[0;37m]\033[1;37m Enter your choice \033[1;37m[\033[1;32mNUM\033[1;37m]:\033[1;m ")
         if choice == ("1"):
             try:
                 print(example)
@@ -184,7 +182,7 @@ def fun():
                 back()
 
 
-        elif choice == ("6"):
+        elif choice == ("0"):
             exit()
        
                   
@@ -196,4 +194,3 @@ def fun():
                                               
 if __name__ == "__main__":
     fun()
-    
