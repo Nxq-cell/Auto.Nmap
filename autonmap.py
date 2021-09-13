@@ -60,7 +60,7 @@ def regular():
 def intense():
 
     target = input("\033[1;37m[\033[1;32m?\033[1;37m]\033[1;37m Enter Domain or IP Address: \033[0m").lower()
-    os.system("reset")
+    clear()
     print("\033[32m[~] Scanning : \033[0m" + target)
     print("Prossesing ....)\n")
     time.sleep(1)
@@ -76,7 +76,7 @@ def intense():
 def ping():
 
     target = input("\033[1;37m[\033[1;32m?\033[1;37m]\033[1;37m Enter Domain or IP Address: \033[0m").lower()
-    os.system("reset")
+    clear()
     print("\033[32m[~] Scanning : \033[0m" + target)
     print("Prossesing ....)\n")
     time.sleep(1)
@@ -92,7 +92,7 @@ def ping():
 def quick():
 
     target = input("\033[1;37m[\033[1;32m?\033[1;37m]\033[1;37m Enter Domain or IP Address: \033[0m").lower()
-    os.system("reset")
+    clear()
     print("\033[34m[~] Scanning : \033[0m" + target)
     print("Prossesing ....)\n")
     time.sleep(1)
@@ -108,7 +108,7 @@ def quick():
 def quickplus():
 
     target = input("\033[1;37m[\033[1;32m?\033[1;37m]\033[1;37m Enter Domain or IP Address: \033[0m").lower()
-    os.system("reset")
+    clear()
     print("\033[32m[~] Scanning : \033[0m" + target)
     print("Prossesing ....)\n")
     time.sleep(1)
