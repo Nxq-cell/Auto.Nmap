@@ -55,7 +55,7 @@ def regular():
     results = str(process.read())
     logPath = " logs/nmap-" + strftime("%Y-%m-%d_%H:%M:%S", gmtime())
     print(results + command + logPath)
-    print("\033[33m Nmap Version: \033[0m", scanner.nmap_version())
+    print("\033[32m Nmap Version: \033[0m", scanner.nmap_version())
     
 def intense():
 
